@@ -1,0 +1,76 @@
+= link_to "Dudes", dudes_path
+= link_to "Bears", bears_path
+
+Some content.
+= text_field_tag '', '', class: "this_is_a_dude_class"
+= link_to "Open Dialog", "javascript:void(0);", class: "open_dialog"
+
+%a{href: "#brian_is_cool"} Brian is cool.
+
+%div.these_are_going_to_be_tabs
+  %ul
+    %li
+      %a{href: '#tab1'} Tab 1
+    %li
+      %a{href: '#tab2'} Tab 2
+    %li
+      %a{href: '#tab3'} Tab 3
+  %div#tab1
+    This is the first tab's content.
+  %div#tab2
+    This is the second tab's content.
+  %div#tab3
+    This is the third tab's content.
+
+= text_field_tag "q", "", class: "autocomplete_1"
+
+
+%div.new_accordion
+  %h3
+    %a{href: '#'} Sweet Content.
+  %div
+    THis is some sweet content.
+  %h3
+    %a{href: '#'} Batman
+  %div
+    Batman is the coolest superhero. Everyone else is wrong.
+
+Patient 0
+%a Show
+%br
+Patient 1
+%a Show
+%br
+Patient 2
+%a Show
+%br
+Patient 3
+%a Show
+%br
+
+#brian_is_cool
+  Brian is WAY cool.
+
+
+.droppable
+  .draggable
+    Kevin is super cool.
+
+  .draggable
+    Kevin is WAY cool.
+
+.sortable
+  %ul
+    %li Kevin
+    %li Preston
+    %li Brian
+    %li Gene
+    %li Rich
+
+
+
+
+
+
+%div.dialog_thing
+  Some content goes here. Brian, you're cool. Preston, you're cool too. So on and so forth.

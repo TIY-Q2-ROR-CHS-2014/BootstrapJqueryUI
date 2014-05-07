@@ -1,0 +1,19 @@
+%h1 Listing bears
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @bears.each do |bear|
+    %tr
+      %td= bear.name
+      %td= link_to 'Show', bear
+      %td= link_to 'Edit', edit_bear_path(bear)
+      %td= link_to 'Destroy', bear, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Bear', new_bear_path

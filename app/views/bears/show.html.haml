@@ -1,0 +1,14 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @bear.name
+%p
+  Types of Honey:
+  %ul
+    - @bear.honeys.each do |honey|
+      %li= honey.name
+
+= link_to 'Edit', edit_bear_path(@bear)
+\|
+= link_to 'Back', bears_path
